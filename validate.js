@@ -1,4 +1,5 @@
     function onInputAll() {
+        console.log($('#total-baseline').val())
         if ($('#total-baseline').val().length >= 1) {
             disableButtons(false, false, false)
         } else { disableButtons(true, true, true) }

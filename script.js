@@ -188,15 +188,15 @@ function initial_draw() {
 }	
 	
 function redraw(){	
-	 beds_suitable = parseInt(document.getElementById("beds_suitable").value); 
-     beds_unsuitable = parseInt(document.getElementById("beds_unsuitable").value);
-	 surge_alternate_beds = parseInt(document.getElementById("alternate_beds").value);
-	 surge_icu_beds = parseInt(document.getElementById("icu_beds").value);
-	 surge_nonicu_beds = parseInt(document.getElementById("nonicu_beds").value);
-	 baseline_nonicu = parseInt(document.getElementById("baseline_nonicu").value);
-	 baseline_icu = parseInt(document.getElementById("baseline_icu").value);
-	 occupied_icu = parseInt(document.getElementById("occupied_icu").value);
-	 occupied_nonicu = parseInt(document.getElementById("occupied_nonicu").value);
+	 beds_suitable = parseInt(document.getElementById("total-baseline").value); 
+     beds_unsuitable = parseInt(document.getElementById("total-unsuitable").value);
+	 surge_alternate_beds = parseInt(document.getElementById("surge-alt").value);
+	 surge_icu_beds = parseInt(document.getElementById("surge-icu").value);
+	 surge_nonicu_beds = parseInt(document.getElementById("surge-nicu").value);
+	 baseline_nonicu = parseInt(document.getElementById("baseline-nicu").value);
+	 baseline_icu = parseInt(document.getElementById("baseline-icu").value);
+	 occupied_icu = parseInt(document.getElementById("occupied-icu").value);
+	 occupied_nonicu = parseInt(document.getElementById("occupied-nicu").value);
 	 available_nonicu = (baseline_nonicu - occupied_nonicu) + (surge_alternate_beds + surge_nonicu_beds);
 	 available_icu = (baseline_icu + surge_icu_beds) - occupied_icu;
 	 d3.select("svg").remove();

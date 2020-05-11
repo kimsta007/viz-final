@@ -21,11 +21,17 @@ D3, HTML, CSS
 
 Team Members
 ===
-[1] Xiaoshuai (Maksim) Li (Data Science), Worcester Polytechnic Institute, Worcester, MA, USA. E-mail: xli3@wpi.edu
+[1] Xiaoshuai (Maksim) Li (Data Science), Worcester Polytechnic Institute, Worcester, MA, USA. 
 
-[2] Noëlle Rakotondravony (Computer Science), Worcester Polytechnic Institute, Worcester, MA, USA. E-mail: ntrakotondravony@wpi.edu
+E-mail: xli3@wpi.edu
 
-[3] Akim Ndlovu (Computer Science), Worcester Polytechnic Institute, Worcester, MA, USA. E-mail: andlovu@wpi.edu
+[2] Noëlle Rakotondravony (Computer Science), Worcester Polytechnic Institute, Worcester, MA, USA. 
+
+E-mail: ntrakotondravony@wpi.edu
+
+[3] Akim Ndlovu (Computer Science), Worcester Polytechnic Institute, Worcester, MA, USA. 
+
+E-mail: andlovu@wpi.edu
 
 References
 ===

@@ -1,7 +1,7 @@
 Data Visualization Final Project
 ===
 
-Project Webpage: https://github.com/kimsta007/viz-final
+Project Webpage: https://kimsta007.github.io/viz-final/
 
 Project Demo:
 

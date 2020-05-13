@@ -3,10 +3,6 @@ Data Visualization Final Project
 
 Project Webpage: https://kimsta007.github.io/viz-final/
 
-Project Demo:
-
-Project Process Book:
-
 ![Webpage](img/webpage.PNG)
 
 Project Background

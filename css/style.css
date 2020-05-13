@@ -1,3 +1,4 @@
+@import url(http://www.jasondavies.com/parallel-sets/d3.parsets.css);
 	#viz{
 		width: 800px;
         height: 500px;
@@ -7,8 +8,9 @@
     svg {
         width: 100%;
         height: 100%;
-        position: center;
-		margin-top: 50px;
+        position: relative;
+		margin-top: 10px;
+		margin-left: 70px;
     }
     text{
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -59,9 +61,51 @@
 	  shape-rendering: crispEdges;
 	}
 	
-	p {
+p {
 		font-family: Arial;
 		font-size: 11px;
 		color: black;
 		text-align: justify;
-	}
+}
+	
+p.meta, p.footer {
+  font-size: 13px;
+  color: #333;
+}
+p.meta {
+  text-align: center;
+}
+
+text.icicle { pointer-events: none; }
+.options { font-size: 12px; text-align: center; padding: 5px 0; }
+.curves { float: left; }
+.source { float: right; }
+pre, code { font-family: "Menlo", monospace; }
+
+.html .value,
+.javascript .string,
+.javascript .regexp {
+  color: #756bb1;
+}
+
+.html .tag,
+.css .tag,
+.javascript .keyword {
+  color: #3182bd;
+}
+
+.comment {
+  color: #636363;
+}
+
+.html .doctype,
+.javascript .number {
+  color: #31a354;
+}
+
+.html .attribute,
+.css .attribute,
+.javascript .class,
+.javascript .special {
+  color: #e6550d;
+}

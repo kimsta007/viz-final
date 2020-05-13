@@ -11,7 +11,7 @@
         if ((baselineIcu + baselineIcu) > baseline) {
             alert("The # of ICU & nonICU Beds should not exceed the total baseline " + baseline)
             disableButtons(true, true, true)
-        }
+        }else {disableButtons(false, false, false)}
     }
 
     function onInputOccupied() {
@@ -21,7 +21,7 @@
         if ((occupiedIcu > baselineIcu) || (occupiedNicu > baselineNicu)) {
             alert("occupied beds should be less than the its available type (" + baselineIcu + " or " + baselineNicu + ")")
             disableButtons(true, true, true)
-        }
+        } else {disableButtons(false, false, false)}
     }
 
     function onInputSurge() {
@@ -31,7 +31,7 @@
         if ((surgeAlt + surgeIcu + surgeNicu > unsuitable) || (surgeAlt > unsuitable) || (surgeIcu > unsuitable) || (surgeNicu > unsuitable)) {
             alert("Total surge beds can't be greater than # unsuitable beds (" + unsuitable + ")")
             disableButtons(true, true, true)
-        }
+        }else {disableButtons(false, false, false)}
     }
 
     function disableButtons(btn1, btn2, btn3) {

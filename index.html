@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -19,8 +17,10 @@
   <script src="js/script.js"></script>
   <script src="js/validate.js"></script>
   <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.7.0/d3-legend.min.js"></script>
+  <script src="js/d3.parsets.js"></script>
+  <script src="js/highlight.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Hospital Bed Availability</title>
 </head>
@@ -43,6 +43,9 @@
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#proposed">Proposed Visualization</a>
+      </li>
+	  <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#sankey">Alternate Visualization</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#demo">Project Demo</a>
@@ -95,7 +98,7 @@
 	  As a proposed solution we allow the audience to dynamically create a similar visualization based on the values they desire. The visualization uses tooltips for quick reference of the respective values. A validation mechanism is put in place to guard against incorrect values.
 	  </p>
 	  </div>
-	   <div class="content-section-heading text-center">
+	  <div class="content-section-heading text-center">
      <h2 style="color:#777; font-family: arial;">Total Hospital Bed Availability</h2>
       </div>
      <div class="col-lg-12 col-md-12 col-sm-12">
@@ -166,18 +169,31 @@
 		</div>
 	</div>
 	</div>
-	<div class="row">
-        <div class="col-lg-10 mx-auto">
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#demo">Project Demo</a>
-        </div>
-    </div>
-   </div>	
-		
+   </div>			
       </div>
     </div>
   </section>
 
-  <!-- Overview -->
+  <!-- Sankey -->
+  <section class="content-section text-white" id="sankey">
+    <div class="container text-center">
+	  <div style="color:#000; font-family: Arial; text-align: justify; margin-top: 30px;">
+		  <p style="font-size:16px">
+			<b><u>Alternate Visualization:</u></b>
+			We propose an alternative way of representing the proposed visualization using parallel sets shown below. 
+		  </p>
+	  </div>
+       <div id="vis"></div>
+	   <script src="js/sankey.js"></script>
+	   	<div class="row">
+        <div class="col-lg-10 mx-auto">
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#demo">Project Demo</a>
+        </div>
+		</div>
+    </div>
+  </section>
+  
+   <!-- Overview -->
   <section class="callout" id="demo">
     <div class="container text-center">
        <video width="800" height="500" controls>
